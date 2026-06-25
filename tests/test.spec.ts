@@ -14,6 +14,6 @@ test('test_TC-D1-00009', async ({ page }) => {
   await page.getByText('BarrysTDubai').click();
   await page.waitForTimeout(4000);
   await page.getByRole('button', { name: 'Cancel' }).click();
-  await page.getByRole('button', { name: 'yes' }).click();
+  await page.getByRole('button', { name: 'yess' }).click();
   await page.goto('/event/249053?_from=user_calendar&date=2026-06-14');
 });
