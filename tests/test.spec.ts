@@ -10,7 +10,7 @@ test('test_TC-D1-00009', async ({ page }) => {
   await page.goto('/');
   await page.locator('#tomselect-1-ts-control').click();
   await page.getByRole('option', { name: '🇦🇪 United Arab Emirates' }).last().click();
-  await page.goto('/?country=3');
+  await page.goto('/?country=2');
   await page.getByText('BarrysTDubai').click();
   await page.waitForTimeout(4000);
   await page.getByRole('button', { name: 'Cancel' }).click();
